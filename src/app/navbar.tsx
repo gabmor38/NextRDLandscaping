@@ -34,7 +34,7 @@ const categories = [
       name: 'Contact',
       href: '/contact',
       id: '3',
-      className:"nav-item nav-pills"
+      className:"nav-item nav-pills text-black buttonColor buttonBorderRadius"
     },
   ];;
 
@@ -47,20 +47,21 @@ export default function Navbar() {
     const toggle = () => setIsOpen((prev) => !prev);
       
   return (
-    <nav className={`navbar navbar-expand-lg ${ pathname !== '/'? "border-bottom" : ""}`} role="navigation">
+    <nav className={`navbar navbar-expand-lg ${ pathname !== '/'? "border-bottomgreen" : ""}`} role="navigation">
           <div className="container-fluid navbarTabs d-flex">
             <Link className="navbar-brand" href="/">  
-            <CldImage
-                        src="Landscaping-4_qgoqge" 
-                        width="150"
-                        height="150"
-                        crop={{
-                          type: "auto",
-                          source: true,
-                        }}
-                        alt={"logo"}
-                        radius={50}
-                      />
+              <CldImage
+                src="Screenshot_2025-03-07_at_11.13.51_AM_eqdnb3" 
+                width="250"
+                height="150"
+                crop={{
+                  type: "auto",
+                  source: true,
+                }}
+                alt={"logo"}
+                radius={50}
+                style={{padding:'10px'}}
+              />
             </Link>
              {/* Toggle Button */}
               <button

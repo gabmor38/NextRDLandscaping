@@ -146,7 +146,7 @@ export default function Contact( ) {
                   width: "50px",
                   height: "50px",
                   borderRadius: "5px",
-                  backgroundColor: "#5C7285",
+                  backgroundColor: "#98c657",
                   padding: "10px",
                 }}
               />
@@ -173,7 +173,7 @@ export default function Contact( ) {
                   width: "50px",
                   height: "50px",
                   borderRadius: "5px",
-                  backgroundColor: "#5C7285",
+                  backgroundColor: "#98c657",
                   padding: "10px",
                 }}
               />
@@ -199,7 +199,7 @@ export default function Contact( ) {
                   width: "50px",
                   height: "50px",
                   borderRadius: "5px",
-                  backgroundColor: "#5C7285",
+                  backgroundColor: "#98c657",
                   padding: "10px",
                 }}
               />
@@ -363,17 +363,17 @@ export default function Contact( ) {
                 )}
               </div>
               
-              <div>
+              <div className="col">
                 <ReCAPTCHA
                   sitekey={siteKey}
                   onChange={handleCaptcha}
+                  style={{display: 'flex', justifyContent: "space-around"}}
                 />
               </div>
               <div className="col-12">
                 <button
                   type="submit"
-                  className="btn"
-                  style={{ backgroundColor: "#5C7285", color: "white" }}
+                  className="submitBtn"
                   onClick={validateSubmitForm}
                 >
                   Submit

@@ -67,7 +67,7 @@ export default function Home() {
               <div className="background-div">
                 <h2
                   className="h2 text-center p-3 text-black"
-                  style={{ background: "#E2E0C8" }}
+                  style={{ background: "#719340" }}
                 >
                   Now Booking: Spring, Summer, & Fall 2025!
                 </h2>
@@ -83,7 +83,7 @@ export default function Home() {
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
                       className="bg-white shadow-lg rounded-2xl p-6 transition-shadow duration-300 hover:shadow-2xl"
-                      style={{ borderBottom: "5px solid #818C78" }}
+                      style={{ borderBottom: "5px solid #98c657" }}
                     >
                       <h3 className="text-xl font-semibold mb-2">
                         {service.title}
@@ -101,8 +101,8 @@ export default function Home() {
                         textShadow: "0px 0px 8px rgb(255,255,255)",
                         boxShadow: "0px 0px 8px rgb(255,255,255)",
                       }}
-                      className="py-2 px-4 rounded-lg"
-                      style={{ backgroundColor: "#5C7285", color: "white", borderRadius:45 }}
+                      className="py-2 px-4 rounded-lg buttonColor"
+                      style={{ color: "black", borderRadius:45 }}
                     >
                       Get a quote
                     </motion.button>
@@ -111,13 +111,13 @@ export default function Home() {
               </section>
 
               <section className="container mt-5 mb-5">
-                <h2 className="display-4 mb-5 text-center text-drop-shadow ">
+                <h2 className="display-4 mb-5 text-center ">
                   Explore our Projects
                 </h2>
                 <div
                   className="row row-cols-1 row-cols-md-3 g-4 clearfix mb-5"
                   style={{
-                    borderTop: "1px solid #818C78",
+                    borderTop: "1px solid #bff96d",
                     paddingBottom: "50px",
                   }}
                 >

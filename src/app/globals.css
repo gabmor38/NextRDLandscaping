@@ -7,3 +7,37 @@ body {
   background: #232D14!important;
   font-family: Arial, Helvetica, sans-serif;
 }
+.navbarTabs {
+
+  li {
+    font-family: Roboto;
+    font-weight: 500;
+    color:#98c657;
+    font-size: x-large;
+    display: inline-flex;
+  }
+}
+
+.buttonColor {
+  background-color: #bff96d;
+}
+.buttonBorderRadius {
+  border-radius: 45;
+}
+
+.border-bottomgreen {
+  border-bottom: 1px solid  #bff96d;
+}
+
+.submitBtn {
+  background-color: #bff96d;
+  padding:10px;
+  color: black;
+  border-radius: 25;
+  width: 150px;
+}
+.darkGreen {
+  border: 1px solid #232D14!important;
+}
+
+

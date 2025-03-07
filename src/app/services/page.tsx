@@ -16,19 +16,21 @@ export default function Services() {
         <div className="container text-center">
           <div className="row row-cols-1 row-cols-lg-3 g-4">
             <div className="col">
-              <div className="card h-100">
-                <CldImage
-                  src="sample"
-                  width="500"
-                  height="320"
-                  crop={{
-                    type: "auto",
-                    source: true,
-                  }}
-                  alt={"garden with rocks"}
-                  className={"radiusTop"}
-                  
-                />
+              <div className="card h-100 darkGreen">
+                <div>
+                  <CldImage
+                    src="qhhg1qcxfp5b3p8veknu"
+                    width="500"
+                    height="320"
+                    crop={{
+                      type: "auto",
+                      source: true,
+                    }}
+                    alt={"garden with rocks"}
+                    className={"radiusTop"}
+                    
+                  />
+                </div>
                 <div className="card-body cardBorderBottom" >
                   <h4>Lawn Mowing</h4>
                   <p className="card-text">Lawn mowing available weekly or biweekly, with optional spring and fall cleanups.</p>
@@ -36,7 +38,7 @@ export default function Services() {
               </div>
             </div>
             <div className="col">
-              <div className="card h-100 ">
+              <div className="card h-100  darkGreen">
                 <CldImage
                   src="sample"
                   width="500" 
@@ -55,7 +57,7 @@ export default function Services() {
               </div>
             </div>
             <div className="col">
-              <div className="card h-100 ">
+              <div className="card h-100 darkGreen">
                 <CldImage
                   src="sample"
                   width="500" 
@@ -67,14 +69,14 @@ export default function Services() {
                   alt={"entrance garden"}
                   className={"radiusTop"}
                 />
-                <div className="card-body cardBorderBottom ">
+                <div className="card-body cardBorderBottom darkGreen">
                   <h4>Garden Installation</h4>
                   <p className="card-text">Offering professional garden installation projects, including the design and installation of new and updated gardens.</p>
                 </div>
               </div>
             </div>
             <div className="col  mb-5">
-              <div className="card h-100 ">
+              <div className="card h-100 darkGreen">
               <CldImage
                   src="sample"
                   width="500" 
@@ -94,7 +96,7 @@ export default function Services() {
               </div>
             </div>
             <div className="col  mb-5">
-              <div className="card h-100 ">
+              <div className="card h-100  darkGreen">
                 <CldImage
                   src="sample" 
                   width="500" 
@@ -106,14 +108,14 @@ export default function Services() {
                   alt={"flower bed"}
                   className={"radiusTop"}
                 />
-                <div className="card-body cardBorderBottom">
+                <div className="card-body cardBorderBottom ">
                   <h4>Spring & Fall Clean-Ups</h4>
                   <p className="card-text">Comprehensive seasonal clean-ups to refresh and prepare your yard for the changing seasons.</p>
                 </div>
               </div>
             </div>
             <div className="col mb-5">
-              <div className="card h-100 ">
+              <div className="card h-100  darkGreen">
                 <CldImage
                   src="sample"
                   width="500" 
@@ -125,7 +127,7 @@ export default function Services() {
                   alt={"new sod installation"}
                   className={"radiusTop"}
                 />
-                <div className="card-body cardBorderBottom" >
+                <div className="card-body cardBorderBottom " >
                   <h4>Sod Installation</h4>
                   <p className="card-text">Proven installation of sod to create new lawns or replace existing ones.</p>
                 </div>

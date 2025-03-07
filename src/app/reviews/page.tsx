@@ -18,7 +18,7 @@ export default function Reviews() {
         <div className ="container text-center">
         <div className="row row-cols-1 row-cols-xl-3 g-5">
         <div className="col">
-          <div className="card dropShadow">
+          <div className="card ">
             <FontAwesomeIcon icon={faQuoteRight} size={'2xl'} className="mt-3"/>
             <div className="card-body m-3">
               <blockquote className="blockquote mb-0">
@@ -32,7 +32,7 @@ export default function Reviews() {
           </div>
         </div>
         <div className="col">
-          <div className="card dropShadow">
+          <div className="card">
             <FontAwesomeIcon icon={faQuoteRight} size={'2xl'} className="mt-3"/>
             <div className="card-body m-3">
               <blockquote className="blockquote mb-0">
@@ -46,7 +46,7 @@ export default function Reviews() {
           </div>
         </div>
         <div className="col">
-        <div className="card dropShadow">
+        <div className="card ">
             <FontAwesomeIcon icon={faQuoteRight} size={'2xl'} className="mt-3"/>
             <div className="card-body m-3">
               <blockquote className="blockquote mb-0">
