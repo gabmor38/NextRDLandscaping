@@ -60,13 +60,13 @@ const services = [
 export default function Home() {
   return (
     <>
-      <div className="bg-white">
+      <div>
         <main>
-          <div className="bg-white mb-5">
+          <div className="mb-5">
             <>
               <div className="background-div">
                 <h2
-                  className="h2 text-center p-3"
+                  className="h2 text-center p-3 text-black"
                   style={{ background: "#E2E0C8" }}
                 >
                   Now Booking: Spring, Summer, & Fall 2025!
@@ -76,7 +76,7 @@ export default function Home() {
                 <h2 className="mb-5 display-4 text-center text-drop-shadow">
                   Our Services
                 </h2>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-black">
                   {services.map((service, index) => (
                     <motion.div
                       key={index}
@@ -102,7 +102,7 @@ export default function Home() {
                         boxShadow: "0px 0px 8px rgb(255,255,255)",
                       }}
                       className="py-2 px-4 rounded-lg"
-                      style={{ backgroundColor: "#5C7285", color: "white" }}
+                      style={{ backgroundColor: "#5C7285", color: "white", borderRadius:45 }}
                     >
                       Get a quote
                     </motion.button>
@@ -112,7 +112,7 @@ export default function Home() {
 
               <section className="container mt-5 mb-5">
                 <h2 className="display-4 mb-5 text-center text-drop-shadow ">
-                  Explore our Projects{" "}
+                  Explore our Projects
                 </h2>
                 <div
                   className="row row-cols-1 row-cols-md-3 g-4 clearfix mb-5"
@@ -122,9 +122,9 @@ export default function Home() {
                   }}
                 >
                   <div className="col">
-                    <div className="card border-white ">
+                    <div>
                       <CldImage
-                        src="sample"
+                        src="qhhg1qcxfp5b3p8veknu"
                         width="500"
                         height="500"
                         crop={{
@@ -137,7 +137,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="col">
-                    <div className="card border-white">
+                    <div>
                       <CldImage
                         src="sample" 
                         width="500" 
@@ -152,7 +152,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="col">
-                    <div className="card border-white">
+                    <div>
                       <CldImage
                         src="sample" 
                         width="500"
@@ -168,7 +168,7 @@ export default function Home() {
                   </div>
 
                   <div className="col">
-                    <div className="card border-white">
+                    <div >
                       <CldImage
                         src="sample"
                         width="500" 
@@ -183,7 +183,7 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="col">
-                    <div className="card border-white">
+                    <div>
                       <CldImage
                         src="sample"
                         width="500" 
@@ -199,7 +199,7 @@ export default function Home() {
                     <div className="mb-5"></div>
                   </div>
                   <div className="col">
-                    <div className="card border-white">
+                    <div>
                       <CldImage
                         src="sample"
                         width="500" 

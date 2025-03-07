@@ -7,6 +7,8 @@ import { usePathname } from 'next/navigation';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons/faBars";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
+import { CldImage } from "next-cloudinary";
+
 
 
 const categories = [
@@ -48,7 +50,17 @@ export default function Navbar() {
     <nav className={`navbar navbar-expand-lg ${ pathname !== '/'? "border-bottom" : ""}`} role="navigation">
           <div className="container-fluid navbarTabs d-flex">
             <Link className="navbar-brand" href="/">  
-              <img src="/logo3.png" width="150px" alt="logo" />
+            <CldImage
+                        src="Landscaping-4_qgoqge" 
+                        width="150"
+                        height="150"
+                        crop={{
+                          type: "auto",
+                          source: true,
+                        }}
+                        alt={"logo"}
+                        radius={50}
+                      />
             </Link>
              {/* Toggle Button */}
               <button

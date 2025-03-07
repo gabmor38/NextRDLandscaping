@@ -21,7 +21,7 @@ export default function About() {
     </h2>
   </div>
 
-  <div className="card mb-5 p-5" style={{border: '0px'}}>
+  <div className=" mb-5 p-5" style={{border: '0px'}}>
     <div className="flex flex-col md:flex-row items-center md:items-start gap-5">
       <div className="w-full md:w-1/3 flex justify-center">
       <CldImage
