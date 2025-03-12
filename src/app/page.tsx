@@ -1,9 +1,15 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
-
+ 
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Reviews from "./reviews/page";
 import { CldImage } from "next-cloudinary";
+import Cursor from "./cursor";
+//import Scene from "./scene";
+
+//import Scene from "./scene";
+//import { CldImage } from "next-cloudinary";
 
 export interface FormDataType {
   firstName: string;
@@ -14,56 +20,63 @@ export interface FormDataType {
   message: string;
 }
 
+
+
+
 const services = [
   {
     title: "Yard Work (On-Demand)",
     description:
-      "Flexible, on-demand services for various garden and yard maintenance needs.",
+    "Flexible, on-demand services for various garden and yard maintenance needs.",
   },
   {
     title: "Mulch, Soil & Compost Installation",
     description:
-      "Professional installation of mulch, triple mix soil, and compost to enhance garden beds.",
+    "Professional installation of mulch, triple mix soil, and compost to enhance garden beds.",
   },
   {
     title: "Garden Installation Projects",
     description:
-      "Full-service garden design and installation for creating beautiful, functional outdoor spaces.",
+    "Full-service garden design and installation for creating beautiful, functional outdoor spaces.",
   },
   {
     title: "Retaining Walls & Patios",
     description:
-      "Professional installation of patios and retaining walls to add structure and style to your landscape.",
+    "Professional installation of patios and retaining walls to add structure and style to your landscape.",
   },
   {
     title: "Sod Installation",
     description:
-      "Proven sod installation services to create new lawns or replace existing ones.",
+    "Proven sod installation services to create new lawns or replace existing ones.",
   },
   {
     title: "Spring & Fall Clean-Ups",
     description:
-      "Seasonal garden clean-up services to prepare your yard for spring growth or get it ready for winter.",
+    "Seasonal garden clean-up services to prepare your yard for spring growth or get it ready for winter.",
   },
   {
     title: "Sales & Installation of Mulch, River Rock, and Soil",
     description:
-      "Supply and installation of high-quality mulch, river rock, and soil for landscaping projects.",
+    "Supply and installation of high-quality mulch, river rock, and soil for landscaping projects.",
   },
   {
     title: "Overseeding & Top Dressing Services",
     description:
-      "Lawn repair services, including overseeding and top dressing, to maintain a healthy, vibrant lawn.",
+    "Lawn repair services, including overseeding and top dressing, to maintain a healthy, vibrant lawn.",
   },
 ];
 
 export default function Home() {
+
+
+
   return (
     <>
       <div>
         <main>
           <div className="mb-5">
             <>
+             <Cursor/>
               <div className="background-div">
                 <h2
                   className="h2 text-center p-3 text-black"
@@ -73,7 +86,7 @@ export default function Home() {
                 </h2>
               </div>
               <section className="px-6 py-12 container mt-5 mb-5">
-                <h2 className="mb-5 display-4 text-center text-drop-shadow">
+                <h2 id="ourServices" className="mb-5 display-4 text-center text-drop-shadow">
                   Our Services
                 </h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-black">
@@ -139,7 +152,7 @@ export default function Home() {
                   <div className="col">
                     <div>
                       <CldImage
-                        src="sample" 
+                        src="qhhg1qcxfp5b3p8veknu" 
                         width="500" 
                         height="500"
                         crop={{
@@ -154,7 +167,7 @@ export default function Home() {
                   <div className="col">
                     <div>
                       <CldImage
-                        src="sample" 
+                        src="qhhg1qcxfp5b3p8veknu" 
                         width="500"
                         height="500"
                         crop={{
@@ -170,7 +183,7 @@ export default function Home() {
                   <div className="col">
                     <div >
                       <CldImage
-                        src="sample"
+                        src="qhhg1qcxfp5b3p8veknu"
                         width="500" 
                         height="500"
                         crop={{
@@ -185,7 +198,7 @@ export default function Home() {
                   <div className="col">
                     <div>
                       <CldImage
-                        src="sample"
+                        src="qhhg1qcxfp5b3p8veknu"
                         width="500" 
                         height="500"
                         crop={{
@@ -201,7 +214,7 @@ export default function Home() {
                   <div className="col">
                     <div>
                       <CldImage
-                        src="sample"
+                        src="qhhg1qcxfp5b3p8veknu"
                         width="500" 
                         height="500"
                         crop={{

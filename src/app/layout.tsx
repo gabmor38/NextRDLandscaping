@@ -6,6 +6,7 @@ import "./globals.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from "./footer";
 import Navbar from "./navbar";
+
 //import { GoogleAnalytics } from '@next/third-parties/google';
 
 
