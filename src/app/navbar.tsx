@@ -51,15 +51,15 @@ export default function Navbar() {
           <div className="container-fluid navbarTabs d-flex">
             <Link className="navbar-brand" href="/">  
               <CldImage
-                src="Screenshot_2025-03-07_at_11.13.51_AM_eqdnb3" 
-                width="250"
+                src="yjxxvritcttzkfkjhzqk" 
+                width="150"
                 height="150"
                 crop={{
-                  type: "auto",
+                  type: "fit",
                   source: true,
                 }}
                 alt={"logo"}
-                radius={50}
+                
                 style={{padding:'10px'}}
               />
             </Link>
