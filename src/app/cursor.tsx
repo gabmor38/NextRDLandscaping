@@ -3,15 +3,21 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 
+export interface CursorProps {
+  //setCursorVariant: (variant: "default" | "text") => void;
+  cursorVariant: string;
+}
 
-export default function Cursor() {
+export default function Cursor({cursorVariant}: CursorProps) {
+
+  console.log("props", cursorVariant)
 
     const [mousePosition, setMousePosition] = useState({
         x:0,
         y:0
       });
 
-    const [cursorVariant, setCursorVariant] = useState("default")
+    //const [cursorVariant, setCursorVariant] = useState("default")
     
     
       useEffect(() => {
@@ -43,6 +49,7 @@ export default function Cursor() {
         }
     
     }
+
 
     return (
        <div >

@@ -12,7 +12,7 @@ export default function Reviews() {
         style={{ alignItems: "center"}}
     >
         <div className="mx-auto p-2 ">
-            <h1 className="display-4 mb-5 text-drop-shadow">Customer Reviews</h1>
+            <h2 className="display-4 mb-5 text-drop-shadow">Customer Reviews</h2>
         </div>
 
         <div className ="container text-center">

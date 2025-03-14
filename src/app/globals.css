@@ -53,6 +53,7 @@ body {
 }
 
 .intro {
+  top:0;
   height: 100vh;
   background-color: black;
   display: flex;
@@ -60,8 +61,30 @@ body {
   align-items: center;
 }
 
+/* main {
+  position: absolute;
+  top: 16 0px;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #232D14!important;
+  transform: scale(0, 0);
+  animation: animate 1s ease-in forwards 2s;
+  overflow: hidden;
+} */
+
+/* .content {
+  width: 100%;
+  text-align: center;
+  overflow-y: auto;
+} */
+
 h2 {
   animation: fadeIn 2s ease forwards;
+  text-transform: uppercase;
 }
 
 @keyframes animate {
@@ -98,5 +121,4 @@ h2 {
     transform: translateY(0%);
   }
 }
-
 

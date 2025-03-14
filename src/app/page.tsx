@@ -6,10 +6,10 @@ import Link from "next/link";
 import Reviews from "./reviews/page";
 import { CldImage } from "next-cloudinary";
 import Cursor from "./cursor";
+import { useState } from "react";
 //import Scene from "./scene";
 
-//import Scene from "./scene";
-//import { CldImage } from "next-cloudinary";
+ 
 
 export interface FormDataType {
   firstName: string;
@@ -66,21 +66,27 @@ const services = [
   },
 ];
 
+
 export default function Home() {
 
+  const [cursorVariant, setCursorVariant] = useState("default");
 
+ 
 
   return (
+    
     <>
       <div>
         <main>
           <div className="mb-5">
             <>
-             <Cursor/>
+             <Cursor  cursorVariant={cursorVariant} />
               <div className="background-div">
                 <h2
                   className="h2 text-center p-3 text-black"
                   style={{ background: "#719340" }}
+                  onMouseEnter={() => setCursorVariant("text")}
+                  onMouseLeave={() => setCursorVariant("default")}
                 >
                   Now Booking: Spring, Summer, & Fall 2025!
                 </h2>
@@ -101,7 +107,7 @@ export default function Home() {
                       <h3 className="text-xl font-semibold mb-2">
                         {service.title}
                       </h3>
-                      <p className="text-gray-600">{service.description}</p>
+                      {/* <p className="text-gray-600">{service.description}</p> */}
                     </motion.div>
                   ))}
                 </div>
