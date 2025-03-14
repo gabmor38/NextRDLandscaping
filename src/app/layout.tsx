@@ -17,7 +17,7 @@ const roboto = Roboto({
 })
 
 export const metadata: Metadata = {
-  title: "RD EverTerra Gardens & Lawns | Professional Softscaping & Lawn Care in Kemptville",
+  title: "GMR | Professional Softscaping & Lawn Care in Kemptville",
   description: "Transform your outdoor space with expert softscaping, garden design, and lawn care services.",
   icons: {
     icon: [
