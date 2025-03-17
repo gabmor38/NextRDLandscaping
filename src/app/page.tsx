@@ -25,17 +25,17 @@ export interface FormDataType {
 
 const services = [
   {
-    title: "Yard Work (On-Demand)",
+    title: "Yard Work",
     description:
     "Flexible, on-demand services for various garden and yard maintenance needs.",
   },
   {
-    title: "Mulch, Soil & Compost Installation",
+    title: "Mulch, Soil & Compost",
     description:
     "Professional installation of mulch, triple mix soil, and compost to enhance garden beds.",
   },
   {
-    title: "Garden Installation Projects",
+    title: "Garden Design Projects",
     description:
     "Full-service garden design and installation for creating beautiful, functional outdoor spaces.",
   },
@@ -45,6 +45,7 @@ const services = [
     "Professional installation of patios and retaining walls to add structure and style to your landscape.",
   },
   {
+    id: "5",
     title: "Sod Installation",
     description:
     "Proven sod installation services to create new lawns or replace existing ones.",
@@ -55,12 +56,12 @@ const services = [
     "Seasonal garden clean-up services to prepare your yard for spring growth or get it ready for winter.",
   },
   {
-    title: "Sales & Installation of Mulch, River Rock, and Soil",
+    title: "Mulch, River Rock, and Soil",
     description:
     "Supply and installation of high-quality mulch, river rock, and soil for landscaping projects.",
   },
   {
-    title: "Overseeding & Top Dressing Services",
+    title: "Overseeding & Top Dressing",
     description:
     "Lawn repair services, including overseeding and top dressing, to maintain a healthy, vibrant lawn.",
   },
@@ -70,7 +71,16 @@ const services = [
 export default function Home() {
 
   const [cursorVariant, setCursorVariant] = useState("default");
+  const [showOtherSide, setShowOtherSide] =useState<{ [key: number]: boolean }>({});
 
+  const handleCardClick = (cardIndex:any):void => {
+
+    setShowOtherSide((prev) => {
+      return prev[cardIndex] ? {} : { [cardIndex]: true }; //if card is open reset the state to {} to close it otherwise open it 
+    });
+     
+   
+  }
  
 
   return (
@@ -85,29 +95,34 @@ export default function Home() {
                 <h2
                   className="h2 text-center p-3 text-black"
                   style={{ background: "#719340" }}
-                  onMouseEnter={() => setCursorVariant("text")}
-                  onMouseLeave={() => setCursorVariant("default")}
                 >
                   Now Booking: Spring, Summer, & Fall 2025!
                 </h2>
               </div>
+
               <section className="px-6 py-12 container mt-5 mb-5">
-                <h2 id="ourServices" className="mb-5 display-4 text-center text-drop-shadow">
+                <h2 
+                  id="ourServices" 
+                  className={`mb-5 5 text-center text-drop-shadow titleFont`}
+                  onMouseEnter={() => setCursorVariant("text")}
+                  onMouseLeave={() => setCursorVariant("default")} 
+                >
                   Our Services
                 </h2>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-black">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-black text-center">
                   {services.map((service, index) => (
                     <motion.div
                       key={index}
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.95 }}
-                      className="bg-white shadow-lg rounded-2xl p-6 transition-shadow duration-300 hover:shadow-2xl"
-                      style={{ borderBottom: "5px solid #98c657" }}
+                      className={`${!showOtherSide[index] ? "bg-white" : "buttonColor"} shadow-lg rounded-2xl p-6 transition-shadow duration-300 hover:shadow-2xl`}
+                      style={ !showOtherSide[index] ? { borderBottom: "5px solid #98c657" } : {borderBottom: 'none'}}
+                      onClick={() => handleCardClick(index)}
                     >
-                      <h3 className="text-xl font-semibold mb-2">
-                        {service.title}
-                      </h3>
-                      {/* <p className="text-gray-600">{service.description}</p> */}
+                     { !showOtherSide[index] && <h3 className="text-xl font-semibold mb-2">
+                       {service.title} 
+                      </h3> }
+                      { showOtherSide[index] && <p className="text-black font-semibold">{service.description}</p>}
                     </motion.div>
                   ))}
                 </div>
@@ -130,8 +145,12 @@ export default function Home() {
               </section>
 
               <section className="container mt-5 mb-5">
-                <h2 className="display-4 mb-5 text-center ">
-                  Explore our Projects
+                <h2 
+                  className="titleFont mb-5 text-center "
+                  onMouseEnter={() => setCursorVariant("text")}
+                  onMouseLeave={() => setCursorVariant("default")}
+                  >
+                  View our Projects
                 </h2>
                 <div
                   className="row row-cols-1 row-cols-md-3 g-4 clearfix mb-5"

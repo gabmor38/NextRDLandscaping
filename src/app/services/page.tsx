@@ -2,15 +2,27 @@
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import { CldImage } from "next-cloudinary";
+import Cursor from "../cursor";
+import { useState } from "react";
 
 
 
 export default function Services() {
+
+  const [cursorVariant, setCursorVariant] = useState("default");
+
   return (
     <div id="services" className="mt-5 mb-5" style={{display: 'flex', flexDirection: 'column'}}>
+        <Cursor  cursorVariant={cursorVariant} />
 
         <div className="mx-auto p-2 flex flex-column">
-          <h2 className="text-2xl text-center h2 mb-5">Residential and Commercial Landscaping Services</h2>
+          <h2 
+            className="text-2xl text-center h2 mb-5 title"  
+            onMouseEnter={() => setCursorVariant("text")}
+            onMouseLeave={() => setCursorVariant("default")} 
+          >
+            Residential and Commercial Landscaping Services
+          </h2>
         </div>
 
         <div className="container text-center">

@@ -34,7 +34,7 @@ const categories = [
       name: 'Contact',
       href: '/contact',
       id: '3',
-      className:"nav-item nav-pills text-black buttonColor buttonBorderRadius"
+      className:"nav-item nav-pills text-black buttonColor buttonBorderRadius no-underline"
     },
   ];;
 

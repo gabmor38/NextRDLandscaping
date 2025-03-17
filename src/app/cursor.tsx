@@ -16,8 +16,6 @@ export default function Cursor({cursorVariant}: CursorProps) {
         x:0,
         y:0
       });
-
-    //const [cursorVariant, setCursorVariant] = useState("default")
     
     
       useEffect(() => {
@@ -45,7 +43,8 @@ export default function Cursor({cursorVariant}: CursorProps) {
             width: 150,
             x: mousePosition.x - 75,
             y: mousePosition.y - 75,
-            backgroundColor: 'yellow'
+            backgroundColor: "#bff96d",
+          
         }
     
     }
@@ -56,6 +55,7 @@ export default function Cursor({cursorVariant}: CursorProps) {
         <motion.div
         className="cursor"
         variants={variants}
+        style={{ mixBlendMode: 'difference' }}
         animate={cursorVariant}
         >
         </motion.div>
