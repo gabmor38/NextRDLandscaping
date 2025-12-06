@@ -17,7 +17,7 @@
     "bootstrap": "^5.3.3",
     "motion": "^12.4.10",
     "next": "15.2.6",
-    "next-cloudinary": "^6.16.0",
+    "next-cloudinary": "^6.17.5",
     "nodemailer": "^6.10.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
